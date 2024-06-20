@@ -1,27 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web 2.O</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    
-    <section id="header"><img style="width: 150px;" src="img/logo.png" alt="logo">
-        <a href="#"></a>
+
+    <section style="margin-left: -50px;" id="header"><img style="width: 150px;" src="img/logo.png" alt="logo">
+        
         <div>
             <ul id="navbar">
-                <li><a href="home.html">Home</a></li>
+                <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="cart.html"></a><i class="fa-solid fa-cart-shopping"></i></li>
-                <li><a href="login.html"></a></li>
+                <li><a href="cart.html"></a><svg style="padding-left: 20px;" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512">
+                        <path
+                            d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
+                    </svg></i></li>
+                <li><a href="login.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg></a></li>
             </ul>
         </div>
     </section>
-    
+    <section id="hero">
+        <h4>Trade-in-offer</h4>
+        <h2>Fantastic Savings</h2>
+        <h1>On Every Collection</h1>
+        <p>Save more with coupons & upto 75% off!</p>
+        <button>Shop Now</button>
+    </section>
+
+    <section id="features" class="section-p1">
+        <div class="fe-box">
+            <img style="width: 150px;height: 107px;" src="img/Features/f1.png" alt="">
+            <h6>Worldwide Shipping</h6>
+        </div>
+        <div class="fe-box">
+            <img style="width: 150px;height: 107px;" src="img/Features/Order online.png" alt="">
+            <h6>Online order</h6>
+        </div>
+        <div class="fe-box">
+            <img style="width: 150px;height: 107px;" src="img/Features/Save money.webp" alt="">
+            <h6>Save Money</h6>
+        </div>
+        <div class="fe-box">
+            <img style="width: 150px;height: 107px;" src="img/Features/promotion.png" alt="">
+            <h6>Promotions</h6>
+        </div>
+        <div class="fe-box">
+            <img style="width: 150px;height: 107px;" src="img/Features/Happy customer.png" alt="">
+            <h6>Happy customers</h6>
+        </div>
+        <div class="fe-box">
+            <img style="width: 150px;height: 107px;" src="img/Features/f6.png" alt="">
+            <h6>24/7 Support</h6>
+        </div>
+    </section>
+
+    <section id="best" class="section-p1">
+        <h2>Customer's Favourites</h2>
+        <p>Shop the top picks today</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="img/Best/CHOKKER Set.jpg" alt="">
+                <div class="des">
+                    <h5 class="Name">Pearl Mirror Chokker</h5>
+                    <p class="price"><strike>Rs.650 </strike> &nbsp; <p class="price"> Rs.550 </p> &nbsp; <p class="discount"> 15%Off</p></p>
+                </div>
+                <button class="cart" ><b>Add to Cart</b></button>
+            </div>
+            <div class="pro">
+                <img src="img/Best/American diamond chokker.jpg" alt="">
+                <div class="des">
+                    <h5 class="Name">Amercan Diamond Chokker</h5>
+                    <p class="price"><strike>Rs.650 </strike> &nbsp; <p class="price"> Rs.550 </p> &nbsp; <p class="discount"> 15%Off</p></p>
+                </div>
+                <button class="cart" ><b>Add to Cart</b></button>
+            </div>
+            <div class="pro">
+                <img src="img/Best/Bead long necklace.jpg" alt="">
+                <div class="des">
+                    <h5 class="Name">Bead Long Necklace</h5>
+                    <p class="price"><strike>Rs.650 </strike> &nbsp; <p class="price"> Rs.550 </p> &nbsp; <p class="discount"> 15%Off</p></p>
+                </div>
+                <button class="cart" ><b>Add to Cart</b></button>
+            </div>
+            <div class="pro">
+                <img src="img/Best/Neckline and Statement Earing.jpg" alt="">
+                <div class="des">
+                    <h5 class="Name">Neckline and Statement Earing</h5>
+                    <p class="price"><strike>Rs.650 </strike> &nbsp; <p class="price"> Rs.550 </p> &nbsp; <p class="discount"> 15%Off</p></p>
+                </div>
+                <button class="cart" ><b>Add to Cart</b></button>
+            </div>
+            <div class="pro">
+                <img src="img/Best/Fashion Earrings 1.jpg" alt="">
+                <div class="des">
+                    <h5 class="Name">Western Tops Card</h5>
+                    <p class="price"><strike>Rs.650 </strike> &nbsp; <p class="price"> Rs.550 </p> &nbsp; <p class="discount"> 15%Off</p></p>
+                </div>
+                <button class="cart" ><b>Add to Cart</b></button>
+            </div>
+            <div class="pro">
+                <img src="img/Best/Kundan Kdaa.jpg" alt="">
+                <div class="des">
+                    <h5 class="Name">Kundan Kda</h5>
+                    <p class="price"><strike>Rs.650 </strike> &nbsp; <p class="price"> Rs.550 </p> &nbsp; <p class="discount"> 15%Off</p></p>
+                </div>
+                <button class="cart" ><b>Add to Cart</b></button>
+            </div>
+            <div class="pro">
+                <img src="img/Best/Bangle Set 1.jpg" alt="">
+                <div class="des">
+                    <h5 class="Name">Bangle Set 4pc</h5>
+                    <p class="price"><strike>Rs.650 </strike> &nbsp; <p class="price"> Rs.550 </p> &nbsp; <p class="discount"> 15%Off</p></p>
+                </div>
+                <button class="cart" ><b>Add to Cart</b></button>
+            </div>
+            <div class="pro">
+                <img src="img/Best/Shara Bahubali Jhumka and tikaa.jpg" alt="">
+                <div class="des">
+                    <h5 class="Name">Shara Bahubali Jhumka and tika</h5>
+                    <p class="price"><strike>Rs.650 </strike> &nbsp; <p class="price"> Rs.550 </p> &nbsp; <p class="discount"> 15%Off</p></p>
+                </div>
+                <button class="cart" ><b>Add to Cart</b></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="Categories" class="section-p1">
+        <h2>Shop By Categories</h2>
+        <p>Discover Your Perfect Spkarle</p>
+        <div class="pro-container1">
+            <!-- <div class="pro1">
+                <img src="img/Collections/American diamond chokker sets.jpg" alt="">
+                <div class="des">
+                    <h5 class="Name">American Diamond  Sets</h5>
+                </div>
+            </div> -->
+            <div class="pro1">
+                <img src="img/Collections/Bollywood earings.jpg" alt="">
+                <div class="des">
+                    <h5 class="Name">Bollywood Earings</h5>
+                </div>
+            </div>
+            <div class="pro1">
+                <img src="img/Collections/bahubali jhumka and tika.jpg" alt="">
+                <div class="des">
+                    <h5 class="Name">Bahubali Jhumka and Tika</h5>
+                </div>
+            </div>
+            <div class="pro1">
+                <img src="img/Collections/kundan bangles.jpg" alt="">
+                <div class="des">
+                    <h5 class="Name">Kundan Bangles</h5>
+                </div>
+            </div>
+            <div class="pro1">
+                <img src="img/Collections/Tika and jhumkas.jpg" alt="">
+                <div class="des">
+                    <h5 class="Name">Tika and Jhumkies</h5>
+                </div>
+            </div>
+            <div class="pro1">
+                <img src="img/Collections/Clutches and purses.jpg" alt="">
+                <div class="des">
+                    <h5 class="Name">Clutches and Purses</h5>
+                </div>
+            </div>
+            <div class="pro1">
+                <img src="img/Collections/western wear.jpg" alt="">
+                <div class="des">
+                    <h5 class="Name">Western Wear</h5>
+                </div>
+            </div>
+            <div class="pro1">
+                <img src="img/Collections/Mirror Chokker set.jpg" alt="">
+                <div class="des">
+                    <h5 class="Name">Mirror Chokker set</h5>
+                </div>
+            </div>
+            <div class="pro1">
+                <img src="img/Collections/Pakistani Sets.jpg" alt="">
+                <div class="des">
+                    <h5 class="Name">Pakistani Sets</h5>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
     <script src="script.js"></script>
 </body>
+
 </html>

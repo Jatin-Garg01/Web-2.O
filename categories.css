@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Spartan", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    transition: scroll-behavior 0.5s ease;
+}
+
+/* Global Styles */
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+body {
+    width: 100%;
+
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #E3E6F3;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.26);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+}
+
+ a i {
+    height: 22px;
+    
+  }
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: #1a1a1a;
+    transition: 0.3 ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover:after {
+    content: "";
+    height: 3px;
+    width: 30%;
+    background-color: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+    border-radius: 200px;
+}
+
+#page-header{
+    background-image: url(img/banner/Jewellery-Banner-Design-HD.png);
+    width: 100%;
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+#header-text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-left: 690px;
+    margin-top: 36px;
+}
+
+#header-text h2,
+#header-text p{
+    color: #fff;
+}
+
+#Categories img {
+    height: 130px;
+    width: 130px;
+    border-radius: 100%;
+}
+
+#Categories {
+    text-align: center;
+}
+
+#Categories .pro1 {
+    width: 12%;
+    min-width: 150px;
+    padding: 10px 12px; 
+    /* border: 1px solid #cce7d0; */
+     border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    transition: 0.2s ease;
+    margin-bottom: 30px;
+    margin: 20px 20px;
+}
+
+#Categories .pro1:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2px;
+}
+
+#Categories .pro1 .Name {
+    padding-top: 12px;
+}
+
+#Categories .pro-container1 {
+    padding-top: 25px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#best {
+    text-align: center;
+}
+
+#best .pro {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    transition: 0.2s ease;
+    margin-bottom: 50px;
+}
+
+#best .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+#best .pro img {
+    width: 280px;
+    height: 350px;
+}
+
+#best .pro .Name {
+    padding-top: 12px;
+}
+
+#best .pro .des {
+    margin-bottom: -26px;
+}
+
+.discount {
+    color: 3b7300;
+    display: inline-block;
+}
+
+.price {
+    color: #3d1643;
+    display: inline-block;
+    font-weight: 500;
+}
+
+strike {
+    color: #000000;
+    display: inline-block;
+}
+
+#best .pro button {
+    background-color: black;
+    color: #ffffff;
+    border: none;
+    padding: 12px 45px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#best .pro-container {
+    padding-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+footer {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+
+}
+
+.col1 {
+    width: 23%;
+}
+
+footer a {
+    text-decoration: none;
+    color: #000000;
+}
+
+footer h6 {
+    margin-top: 25px;
+}
+
+
+.follow {
+    margin-top: -30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.icon {
+    margin-top: 7px;
+}
+
+.follow svg {
+    height: 30px;
+    width: 30px;
+}
+
+footer p {
+    font-size: 14px;
+
+
+}
+
+footer .contact {
+    padding-left: 20px;
+}
+
+/* Added a global styles section for consistency */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  
+  /* Categories section styles
+  #Categories {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  #Categories img {
+    height: 130px;
+    width: 130px;
+    border-radius: 100%;
+    transition: transform 0.3s ease;
+    object-fit: cover; 
+  }
+  
+  #Categories img:hover {
+    transform: scale(1.1);
+  }
+  
+ 
+  .pro1 {
+    width: 8%; 
+    min-width: 80px; 
+    padding: 10px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
+    margin: 20px 20px;
+    display: inline-block; 
+  }
+  
+  .pro1:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+  }
+  
+  .pro1 .Name {
+    padding-top: 12px;
+  }
+  
+  
+  .swiper-container {
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 50px;
+  }
+  
+  .swiper-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  
+  .swiper-slide {
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 20%; 
+  }
+  
+  
+  @media (max-width: 768px) {
+    .pro1 {
+      width: 20%;
+      margin: 10px 10px;
+    }
+    .swiper-slide {
+      width: 30%; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .pro1 {
+      width: 30%;
+      margin: 10px 10px;
+    }
+    .swiper-slide {
+      width: 40%; 
+    }
+  } */
+
+  .footer-color{
+    background-color: #9ea2b4;
+    margin: -42px;
+    padding: 0px;
+  }
+
+  

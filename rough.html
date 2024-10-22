@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        /* Add your custom CSS styles here */
+        /* For example, styling the buttons */
+        .cart-btn {
+            padding: 5px 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Shopping Cart</h1>
+    <p>Items in cart: <span id="cart-count">0</span></p>
+    <button class="cart-btn" onclick="addToCart()">Add to Cart</button>
+    <button class="cart-btn" onclick="decrementCart()">-</button>
+    <button class="cart-btn" onclick="incrementCart()">+</button>
+
+    <script>
+        let cartCount = 0;
+
+        function updateCartCount() {
+            document.getElementById("cart-count").textContent = cartCount;
+        }
+
+        function addToCart() {
+            cartCount++;
+            updateCartCount();
+        }
+
+        function incrementCart() {
+            cartCount++;
+            updateCartCount();
+        }
+
+        function decrementCart() {
+            if (cartCount > 0) {
+                cartCount--;
+                updateCartCount();
+            }
+        }
+    </script>
+</body>
+</html>

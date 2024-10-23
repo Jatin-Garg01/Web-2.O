@@ -17,8 +17,8 @@
             <ul id="navbar">
                 <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="#shop">Categories</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Contact us</a></li>
                 <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
                 <li><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
             </ul>
@@ -49,8 +49,8 @@
         <div class="single-pro-details">
             <h6>Home / Necklace</h6>
             <h4>American Diamond Necklace</h4>
-            <h2>Rs.550.00</h2>
-            <button class="normal">Add to Cart</button>
+            <h2 id="neckprice">Rs.550.00</h2>
+            <button id="bt" class="normal" onclick="addToCart()">Add to Cart</button>
             <h4>Product Details</h4>
             <span>Elevate your style with our American Diamond Choker Set, a perfect blend of elegance and
                 sophistication. This stunning set is crafted with precision, featuring brilliant American diamonds that
@@ -168,5 +168,43 @@
         </div>
     </div>
 </body>
+<script>
+    function addToCart() {
+
+        if(document.getElementById("bt").innerText == "Added To Cart!"){ return; }
+        // Get the current cart items from localStorage, or initialize to an empty array if not present
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+        // Get product details
+        const mainImg = document.getElementById("MainImg.").src;
+        const title = document.querySelector(".single-pro-details h4").innerText;
+        const priceText = document.getElementById("neckprice").innerText;
+        const price = parseFloat(priceText.replace("Rs.", "").trim());
+        const quantity = 1; // Default quantity is 1 for new items
+
+        // Check if the product already exists in the cart
+        const existingProductIndex = cart.findIndex(item => item.title === title);
+
+        
+            // If the product doesn't exist, create a new product object
+            const product = {
+                img: mainImg,
+                title: title,
+                price: price,
+                quantity: quantity
+            };
+
+            // Add the product to the cart array
+            cart.push(product);
+
+            
+
+        // Save the updated cart back to localStorage
+        localStorage.setItem("cart", JSON.stringify(cart));
+
+        // Update the button text to give user feedback
+        document.getElementById("bt").innerText = "Added To Cart!";
+    }
+</script>
 
 </html>

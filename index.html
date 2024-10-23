@@ -7,7 +7,7 @@
     <title>E-Jewel Enclave</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/4c7abfbd72.js" crossorigin="anonymous"></script>
-    <link rel="icon" href="logonew.jpg" type="image/png">
+    
 </head>
 
 <body>
@@ -18,9 +18,9 @@
         <div>
             <ul id="navbar">
                 <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="#shop" >Categories</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#shop">Categories</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Contact us</a></li>
                 <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
                 <li><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
             </ul>
@@ -223,16 +223,18 @@
                 </div>
                 <button class="cart"><b>Add to Cart</b></button>
             </div>
-            <div class="pro">
-                <img src="img/Best/American diamond chokker.jpg" alt="">
-                <div class="des">
-                    <h5 class="Name">Amercan Diamond Chokker</h5>
-                    <p class="price"><strike>Rs.650 </strike> &nbsp;
-                    <p class="price"> Rs.550 </p> &nbsp; <p class="discount"> 15%Off</p>
-                    </p>
+            
+                <div class="pro" onclick="window.location.href='cproduct.html';">
+                    <img src="img/Best/American diamond chokker.jpg" alt="">
+                    <div class="des">
+                        <h5 class="Name">Amercan Diamond Chokker</h5>
+                        <p class="price"><strike>Rs.650 </strike> &nbsp;
+                        <p class="price"> Rs.550 </p> &nbsp; <p class="discount"> 15%Off</p>
+                        </p>
+                    </div>
+                    <button class="cart"><b>Add to Cart</b></button>
                 </div>
-                <button class="cart"><b>Add to Cart</b></button>
-            </div>
+            
             <div class="pro">
                 <img src="img/Best/Bead long necklace.jpg" alt="">
                 <div class="des">
@@ -309,13 +311,13 @@
 
     <footer class="section-p1">
         <div class="col1">
-            <img style="height: 125px;width: 175px;" src="logonew.jpg" alt="logo">
+            <img style="height: 125px;width: 175px;" src="img/logo.png" alt="">
             <h6>At Varun's Creations, we are passionate about making stylish and elegant jewellery accessible to everyone.
                 Our mission is to provide exquisite pieces that enhance your look, all while ensuring affordability.
             </h6>
         </div>
         <div class="col">
-            
+
             <h4>Get to know us</h4>
             <p><a href="#">About Us</a></p>
             <p><a href="#">Visit Us</a></p>
@@ -359,7 +361,11 @@
     </div>
 
 
-    
+
 </body>
+
+<script>
+    console.log(localStorage.getItem('user'))
+</script>
 
 </html>

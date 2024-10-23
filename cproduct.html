@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/4c7abfbd72.js" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
     <section style="margin-left: -50px;" id="header"><img style="width: 150px;" src="img/logo.png" alt="logo">
 
         <div>
             <ul id="navbar">
                 <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="#shop" >Categories</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#shop">Categories</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Contact us</a></li>
                 <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
                 <li><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
             </ul>
@@ -24,13 +27,82 @@
 
     <section id="prodetails" class="section-p1">
         <div class="single-pro-image">
-            <img src="img/Best/American diamond chokker.jpg" width="100%" id="MainImg." alt="">
-        </div>
-        <div class="small-img-group">
-            <div class="small-img-col">
-                
+            <img style="border-top-left-radius: 10px;border-top-right-radius: 10px;" height="580px"
+                src="img/Best/American diamond chokker.jpg" width="100%" id="MainImg." alt="">
+
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img width="100%" class="small-img" src="img/Best/American diamond chokker.jpg" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img width="100%" class="small-img" src="img/Best/American diamond chokker.jpg" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img width="100%" class="small-img" src="img/Best/American diamond chokker.jpg" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img width="100%" class="small-img" src="img/Best/American diamond chokker.jpg" alt="">
+                </div>
             </div>
         </div>
+
+        <div class="single-pro-details">
+            <h6>Home / Necklace</h6>
+            <h4>American Diamond Necklace</h4>
+            <h2 id="neckprice">Rs.550.00</h2>
+            <button id="bt" class="normal" onclick="addToCart()">Add to Cart</button>
+            <h4>Product Details</h4>
+            <span>Elevate your style with our American Diamond Choker Set, a perfect blend of elegance and
+                sophistication. This stunning set is crafted with precision, featuring brilliant American diamonds that
+                sparkle like real ones. The choker design beautifully accentuates the neckline, making it ideal for
+                weddings, parties, or festive occasions.</span>
+        </div>
+    </section>
+    <section id="best" class="section-p1">
+        <h2>Featured Products</h2>
+        <p>Shine Brighter , New Collection</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="img/Best/CHOKKER Set.jpg" alt="">
+                <div class="des">
+                    <h5 class="Name">Pearl Mirror Chokker</h5>
+                    <p class="price"><strike>Rs.650 </strike> &nbsp;
+                    <p class="price"> Rs.550 </p> &nbsp; <p class="discount"> 15%Off</p>
+                    </p>
+                </div>
+                <button class="cart"><b>Add to Cart</b></button>
+            </div>
+            <div class="pro">
+                <img src="img/Best/CHOKKER Set.jpg" alt="">
+                <div class="des">
+                    <h5 class="Name">Pearl Mirror Chokker</h5>
+                    <p class="price"><strike>Rs.650 </strike> &nbsp;
+                    <p class="price"> Rs.550 </p> &nbsp; <p class="discount"> 15%Off</p>
+                    </p>
+                </div>
+                <button class="cart"><b>Add to Cart</b></button>
+            </div>
+            <div class="pro">
+                <img src="img/Best/CHOKKER Set.jpg" alt="">
+                <div class="des">
+                    <h5 class="Name">Pearl Mirror Chokker</h5>
+                    <p class="price"><strike>Rs.650 </strike> &nbsp;
+                    <p class="price"> Rs.550 </p> &nbsp; <p class="discount"> 15%Off</p>
+                    </p>
+                </div>
+                <button class="cart"><b>Add to Cart</b></button>
+            </div>
+            <div class="pro">
+                <img src="img/Best/CHOKKER Set.jpg" alt="">
+                <div class="des">
+                    <h5 class="Name">Pearl Mirror Chokker</h5>
+                    <p class="price"><strike>Rs.650 </strike> &nbsp;
+                    <p class="price"> Rs.550 </p> &nbsp; <p class="discount"> 15%Off</p>
+                    </p>
+                </div>
+                <button class="cart"><b>Add to Cart</b></button>
+            </div>
+            
     </section>
 
     <section id="newsletter" class="section-p1 section-m1">
@@ -47,12 +119,13 @@
     <footer class="section-p1">
         <div class="col1">
             <img style="height: 125px;width: 175px;" src="img/logo.png" alt="">
-            <h6>At Varun's Creations, we are passionate about making stylish and elegant jewellery accessible to everyone.
+            <h6>At Varun's Creations, we are passionate about making stylish and elegant jewellery accessible to
+                everyone.
                 Our mission is to provide exquisite pieces that enhance your look, all while ensuring affordability.
             </h6>
         </div>
         <div class="col">
-            
+
             <h4>Get to know us</h4>
             <p><a href="#">About Us</a></p>
             <p><a href="#">Visit Us</a></p>
@@ -93,6 +166,45 @@
                         d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z" />
                 </svg></a>
         </div>
-    </div> 
+    </div>
 </body>
+<script>
+    function addToCart() {
+
+        if(document.getElementById("bt").innerText == "Added To Cart!"){ return; }
+        // Get the current cart items from localStorage, or initialize to an empty array if not present
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+        // Get product details
+        const mainImg = document.getElementById("MainImg.").src;
+        const title = document.querySelector(".single-pro-details h4").innerText;
+        const priceText = document.getElementById("neckprice").innerText;
+        const price = parseFloat(priceText.replace("Rs.", "").trim());
+        const quantity = 1; // Default quantity is 1 for new items
+
+        // Check if the product already exists in the cart
+        const existingProductIndex = cart.findIndex(item => item.title === title);
+
+        
+            // If the product doesn't exist, create a new product object
+            const product = {
+                img: mainImg,
+                title: title,
+                price: price,
+                quantity: quantity
+            };
+
+            // Add the product to the cart array
+            cart.push(product);
+
+            
+
+        // Save the updated cart back to localStorage
+        localStorage.setItem("cart", JSON.stringify(cart));
+
+        // Update the button text to give user feedback
+        document.getElementById("bt").innerText = "Added To Cart!";
+    }
+</script>
+
 </html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - E-jewel Enclave</title>
+    <link rel="stylesheet" href="p2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <!-- Checkout Progress -->
+            <div class="progress-bar">
+                <span class="step completed">Bag</span>
+                <span class="step completed">Address</span>
+                <span class="step active">Payment</span>
+            </div>
+
+            <!-- Payment Section -->
+            <h2>Recommended Payment Options</h2>
+            <div class="payment-options">
+                <div class="payment-option">
+                    <input type="radio" id="googlePay" name="payment" onclick="showPaymentMethod('googlePayDetails')" checked>
+                    <label for="googlePay">Google Pay</label>
+                </div>
+
+                <h3>Other Payment Options</h3>
+                <div class="payment-option">
+                    <input type="radio" id="cashOnDelivery" name="payment" onclick="showPaymentMethod('cashOnDeliveryDetails')">
+                    <label for="cashOnDelivery">Cash On Delivery</label>
+                </div>
+
+                <div class="payment-option">
+                    <input type="radio" id="upi" name="payment" onclick="showPaymentMethod('upiDetails')">
+                    <label for="upi">UPI (Pay via any App)</label>
+                </div>
+
+                <div class="payment-option">
+                    <input type="radio" id="creditCard" name="payment" onclick="showPaymentMethod('creditCardDetails')">
+                    <label for="creditCard">Credit/Debit Card</label>
+                </div>
+
+                
+
+
+                <div class="payment-option">
+                    <input type="radio" id="emi" name="payment" onclick="showPaymentMethod('emiDetails')">
+                    <label for="emi">EMI</label>
+                </div>
+
+                <div class="payment-option">
+                    <input type="radio" id="netBanking" name="payment" onclick="showPaymentMethod('netBankingDetails')">
+                    <label for="netBanking">Net Banking</label>
+                </div>
+            </div>
+
+            <!-- Dynamic Payment Method Details Section -->
+            <div id="paymentDetailsSection">
+                <div id="googlePayDetails" class="payment-details">
+                    <h4>Google Pay Instructions</h4>
+                    <p>Proceed with Google Pay to complete the transaction securely.</p>
+                </div>
+
+                <div id="cashOnDeliveryDetails" class="payment-details hidden">
+                    <h4>Cash on Delivery</h4>
+                    <p>You can pay in cash when your order is delivered.</p>
+                </div>
+
+                <div id="upiDetails" class="payment-details hidden">
+                    <h4>UPI Payment</h4>
+                    <p>Use any UPI app to make the payment by entering your UPI ID.</p>
+                </div>
+
+                <div id="creditCardDetails" class="payment-details hidden">
+                    <h4>Credit/Debit Card Payment</h4>
+                    <p>Enter your card details to proceed with the payment.</p>
+                </div>
+
+                <div id="walletsDetails" class="payment-details hidden">
+                    <h4>Wallet Payment</h4>
+                    <p>Choose from the supported wallets and make the payment.</p>
+                </div>
+
+                <div id="payLaterDetails" class="payment-details hidden">
+                    <h4>Pay Later</h4>
+                    <p>Pay for your purchase later with supported services.</p>
+                </div>
+
+                <div id="emiDetails" class="payment-details hidden">
+                    <h4>EMI Payment</h4>
+                    <p>Choose the EMI plan for monthly installments.</p>
+                </div>
+
+                <div id="netBankingDetails" class="payment-details hidden">
+                    <h4>Net Banking</h4>
+                    <p>Complete your transaction using secure net banking options.</p>
+                </div>
+            </div>
+
+            <!-- Gift Card Section -->
+            <div class="gift-card">
+                <label for="giftCard">Have a Gift Card?</label>
+                <input type="text" id="giftCard" placeholder="Enter gift card code">
+                <button>APPLY</button>
+            </div>
+
+            <!-- Price Details -->
+            <div class="price-details">
+                <p>Total MRP: Rs 558</p>
+                <p>Discount on MRP: Rs 432</p>
+                <p>Shipping Fee: Free</p>
+                <hr>
+                <p><strong>Total Amount: Rs 558</strong></p>
+                <button class="pay-now-btn" id="payNowButton">PAY NOW</button>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="p2.js"></script>
+</body>
+</html>

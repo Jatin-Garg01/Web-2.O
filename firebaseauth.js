@@ -42,6 +42,7 @@
     createUserWithEmailAndPassword(auth, email, password)
     .then((userCredential)=>{
         const user=userCredential.user;
+        console.log(user)
         const userData={
             email: email,
             firstName: firstName,
@@ -52,6 +53,7 @@
         setDoc(docRef,userData)
         .then(()=>{
             window.location.href='login.html';
+            console.log(user)
         })
         .catch((error)=>{
             console.error("error writing document", error);
@@ -80,8 +82,10 @@
     .then((userCredential)=>{
         showMessage('login is successful', 'signInMessage');
         const user=userCredential.user;
-        localStorage.setItem('loggedInUserId', user.uid);
+        console.log(user)
+        localStorage.setItem('user', JSON.stringify(user));
         window.location.href='index.html';
+        console.log(user)
     })
     .catch((error)=>{
         const errorCode=error.code;

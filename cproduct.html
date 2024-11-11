@@ -28,34 +28,31 @@
     <section id="prodetails" class="section-p1">
         <div class="single-pro-image">
             <img style="border-top-left-radius: 10px;border-top-right-radius: 10px;" height="580px"
-                src="img/Best/American diamond chokker.jpg" width="100%" id="MainImg." alt="">
+                src="img/cpro_tikaa/2.jpg" width="100%" id="MainImg" alt="">
 
             <div class="small-img-group">
                 <div class="small-img-col">
-                    <img width="100%" class="small-img" src="img/Best/American diamond chokker.jpg" alt="">
+                    <img width="100%" height="156px" class="small-img" src="img/cpro_tikaa/2.jpg" alt="">
                 </div>
                 <div class="small-img-col">
-                    <img width="100%" class="small-img" src="img/Best/American diamond chokker.jpg" alt="">
+                    <img width="100%" height="156px" class="small-img" src="img/cpro_tikaa/3.jpg" alt="">
                 </div>
                 <div class="small-img-col">
-                    <img width="100%" class="small-img" src="img/Best/American diamond chokker.jpg" alt="">
+                    <img width="100%" height="156px" class="small-img" src="img/cpro_tikaa/4.jpg" alt="">
                 </div>
                 <div class="small-img-col">
-                    <img width="100%" class="small-img" src="img/Best/American diamond chokker.jpg" alt="">
+                    <img width="100%" height="156px" class="small-img" src="img/cpro_tikaa/1.jpg" alt="">
                 </div>
             </div>
         </div>
 
         <div class="single-pro-details">
-            <h6>Home / Necklace</h6>
-            <h4>American Diamond Necklace</h4>
+            <h6>Home / Jhumkies</h6>
+            <h4>Jhumikes Set</h4>
             <h2 id="neckprice">Rs.550.00</h2>
             <button id="bt" class="normal" onclick="addToCart()">Add to Cart</button>
             <h4>Product Details</h4>
-            <span>Elevate your style with our American Diamond Choker Set, a perfect blend of elegance and
-                sophistication. This stunning set is crafted with precision, featuring brilliant American diamonds that
-                sparkle like real ones. The choker design beautifully accentuates the neckline, making it ideal for
-                weddings, parties, or festive occasions.</span>
+            <span>Enhance your elegance with our Beautiful Tika and Jhumkies Set, a quintessential blend of tradition and style. This exquisite set is meticulously crafted, adorned with radiant jewels that shimmer with every movement. The tika sits gracefully on the forehead, while the jhumkies delicately frame the face, making it perfect for weddings, festive gatherings, and grand celebrations. This set not only completes your look but also adds an aura of sophistication and charm to your appearance.</span>
         </div>
     </section>
     <section id="best" class="section-p1">
@@ -169,6 +166,25 @@
     </div>
 </body>
 <script>
+    var MainImg=document.getElementById("MainImg");
+    var smallimg=document.getElementsByClassName("small-img");
+    smallimg[0].onclick = function(){
+        MainImg.src = smallimg[0].src;
+        // location.reload();
+    }
+    smallimg[1].onclick = function(){
+        MainImg.src = smallimg[1].src;
+        // location.reload();
+    }
+    smallimg[2].onclick = function(){
+        MainImg.src = smallimg[2].src;
+        // location.reload();
+    }
+    smallimg[3].onclick = function(){
+        MainImg.src = smallimg[3].src;
+        // location.reload();
+    }
+    
     function addToCart() {
 
         if(document.getElementById("bt").innerText == "Added To Cart!"){ return; }
@@ -176,7 +192,7 @@
         let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
         // Get product details
-        const mainImg = document.getElementById("MainImg.").src;
+        const mainImg = document.getElementById("MainImg").src;
         const title = document.querySelector(".single-pro-details h4").innerText;
         const priceText = document.getElementById("neckprice").innerText;
         const price = parseFloat(priceText.replace("Rs.", "").trim());

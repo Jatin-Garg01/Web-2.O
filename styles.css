@@ -63,7 +63,7 @@ a i {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 80px;
+  padding: 5px 80px;
   background-color: #E3E6F3;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.26);
   z-index: 999;
@@ -199,7 +199,7 @@ a i {
 }
 
 #best .pro{
-  width: 23%;
+  width: 304px;
   min-width: 250px;
   padding: 10px 12px;
   border: 1px solid #cce7d0;
@@ -270,7 +270,7 @@ strike{
 }
 
 #Categories .pro1{
-  width: 19%;
+  width: 252px;
   min-width: 230px;
   padding: 10px 12px;
   /* border: 1px solid #cce7d0; */
@@ -614,3 +614,293 @@ footer .contact{
   
 }
 
+nav ul {
+  list-style: none;
+  background-color: #088178;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.content {
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #088178;
+}
+
+/* Modal CSS */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 32px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  margin-top: 177px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover, .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input:focus, textarea:focus {
+  border-color: #088178;
+  outline: none;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #088178;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+#mobile{
+  display: none;
+  align-items: center;
+
+}
+
+.btn:hover {
+  background-color: #066762;
+}
+
+p {
+  margin-top: 20px;
+}
+
+a {
+  color: #088178;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+#close{
+  display: none;
+}
+@media(max-width:799px){
+  .section-p1 {
+    padding: 40px 40px;
+  }
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: #E3E6F3;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 80px 0 0 10px;
+    transition: 0.3s;
+  
+}
+
+#navbar.active{
+  right: 0px;
+}
+
+#navbar li{
+  margin-bottom: 25px;
+  
+}
+#mobile{
+  display: flex;
+  align-items: center;
+
+}
+
+#mobile i{
+  color: #1a1a1a;
+  font-size: 24px;
+  padding-left: 20px;
+  
+}
+
+#mobile li{
+  list-style: none;
+}
+
+#close{
+  display: initial;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  color: #222;
+  font-size: 24px;
+}
+
+#lg-bag{
+  display: none;
+}
+
+#hero {
+  height: 70vh;
+  padding: 0 80px;
+  background-position: top 30% right 30%;
+}
+
+#features {
+  justify-content: center;
+  
+}
+
+#features .fe-box {
+  margin: 15px 15px;
+}
+
+#best .pro-container {
+  
+  justify-content: center;
+}
+#best .pro {
+  margin: 15px;
+}
+
+#Categories .pro-container1 {
+  justify-content: center;
+}
+
+#newsletter .form {
+  width: 70%;
+}
+
+}
+
+
+
+@media (max-width: 1024px) {
+  footer {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .col1, .col, .contact {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col1, .col, .contact, .follow {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .icon svg {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .col1 h6 {
+    font-size: 14px;
+  }
+
+  footer p, footer h4 {
+    font-size: 13px;
+  }
+
+  .follow {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .icon svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 420px) {
+  #best .pro img {
+    width: 240px;
+    height: 330px;
+}
+
+  #logo{
+    width: 118px !important;
+    height: 125px !important;
+    margin-right: 77px !important;
+  }
+}

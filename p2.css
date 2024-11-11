@@ -7,10 +7,10 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url('png.unknown');
+    background-image: url('image.png');
     background-repeat: no-repeat;
     background-size: cover;
-    backdrop-filter: blur(13px);
+    backdrop-filter: blur(5px);
     
 }
 
@@ -57,7 +57,7 @@ body {
 }
 
 .step.active {
-    color: #004aad;
+    color: #088178;
 }
 
 .payment-options {
@@ -107,7 +107,7 @@ body {
 
 .gift-card button {
     padding: 10px 20px;
-    background-color: #004aad;
+    background-color: #088178;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -125,7 +125,7 @@ body {
 .pay-now-btn {
     width: 100%;
     padding: 15px;
-    background-color: #004aad;
+    background-color: #088178;
     color: white;
     border: none;
     font-size: 1.2rem;

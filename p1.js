@@ -20,7 +20,7 @@ document.addEventListener('change', function(event) {
 continueBtn.addEventListener('click', function() {
     const selectedAddress = document.querySelector('input[name="address"]:checked');
     if (selectedAddress) {
-        window.location.href = "payment.html"; // Navigate to the payment page
+        window.location.href = "p2.html"; // Navigate to the payment page
     } else {
         alert("Please select an address before continuing."); // Alert if no address is selected
     }

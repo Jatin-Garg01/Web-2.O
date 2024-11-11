@@ -8,43 +8,52 @@
     <link rel="stylesheet" href="categories.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <style>
-        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; /* Remove default body margin */
+            padding: 0; /* Remove default body padding */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
 
-        .catsec #Categories {
+        #Categories {
             width: 100%; /* Full width */
             overflow: hidden;
             text-align: center;
             margin-top: 50px;
         }
 
-        .catsec #Categories h2 {
+        #Categories h2 {
             margin-bottom: 20px;
         }
 
-        .catsec #Categories .pro-container {
+        #Categories .pro-container {
             display: flex;
             gap: 30px; /* Space between items */
             animation: slide 20s linear infinite;
         }
 
-        .catsec #Categories .pro1 {
+        #Categories .pro1 {
             flex: none;
             width: 150px; /* Fixed width for each item */
             text-align: center;
         }
 
-        .catsec #Categories img {
+        #Categories img {
             width: 130px;
             height: 130px;
             border-radius: 100%;
             transition: transform 0.3s ease;
         }
 
-        .catsec #Categories img:hover {
+        #Categories img:hover {
             transform: scale(1.1);
         }
 
-        .catsec #Categories .Name {
+        #Categories .Name {
             margin-top: 10px;
             font-size: 14px;
         }
@@ -60,7 +69,7 @@
         }
 
         /* Duplicate container to enable infinite scroll */
-        .catsec #Categories .pro-container::after {
+        #Categories .pro-container::after {
             content: '';
             display: flex;
         }
@@ -68,82 +77,78 @@
 </head>
 
 <body>
-
-    <div class="catsec">
-        <section id="Categories" class="section-p1">
-            <h2 id="shop">Categories</h2>
-            <p>Discover Your Perfect Sparkle</p>
-            <div class="pro-container">
-                <div class="pro1">
-                    <a href="American.html"><img src="img/Collections/American diamond chokker sets.jpg" alt=""></a>
-                    <div class="Name">American Diamond Sets</div>
-                </div>
-                <div class="pro1">
-                    <a href="bahubali.html"><img src="img/Collections/bahubali jhumka and tika.jpg" alt=""></a>
-                    <div class="Name">Bahubali Jhumkas</div>
-                </div>
-                <div class="pro1">
-                    <a href="clutches.html"><img src="img/Collections/Clutches and purses.jpg" alt=""></a>
-                    <div class="Name">Clutches and Purses</div>
-                </div>
-                <div class="pro1">
-                    <a href="kundan bangles.html"><img src="img/Collections/kundan bangles.jpg" alt=""></a>
-                    <div class="Name">Kundan Bangles</div>
-                </div>
-                <div class="pro1">
-                    <a href="mirror chokker.html"><img src="img/Collections/Mirror Chokker set.jpg" alt=""></a>
-                    <div class="Name">Mirror Chokker Sets</div>
-                </div>
-                <div class="pro1">
-                    <a href="pakistani sets.html"><img src="img/Collections/Pakistani Sets.jpg" alt=""></a>
-                    <div class="Name">Pakistani Sets</div>
-                </div>
-                <div class="pro1">
-                    <a href="Tika and Jhumkies.html"><img src="img/Collections/Tika and jhumkas.jpg" alt=""></a>
-                    <div class="Name">Tikka Sets</div>
-                </div>
-                <div class="pro1">
-                    <a href="western wear.html"><img src="img/Collections/western wear.jpg" alt=""></a>
-                    <div class="Name">Western Wear</div>
-                </div>
-    
-                <!-- Duplicate set for infinite scrolling -->
-                <div class="pro1">
-                    <a href="American.html"><img src="img/Collections/American diamond chokker sets.jpg" alt=""></a>
-                    <div class="Name">American Diamond Sets</div>
-                </div>
-                <div class="pro1">
-                    <a href="bahubali.html"><img src="img/Collections/bahubali jhumka and tika.jpg" alt=""></a>
-                    <div class="Name">Bahubali Jhumkas</div>
-                </div>
-                <div class="pro1">
-                    <a href="clutches.html"><img src="img/Collections/Clutches and purses.jpg" alt=""></a>
-                    <div class="Name">Clutches and Purses</div>
-                </div>
-                <div class="pro1">
-                    <a href="kundan bangles.html"><img src="img/Collections/kundan bangles.jpg" alt=""></a>
-                    <div class="Name">Kundan Bangles</div>
-                </div>
-                <div class="pro1">
-                    <a href="mirror chokker.html"><img src="img/Collections/Mirror Chokker set.jpg" alt=""></a>
-                    <div class="Name">Mirror Chokker Sets</div>
-                </div>
-                <div class="pro1">
-                    <a href="pakistani sets.html"><img src="img/Collections/Pakistani Sets.jpg" alt=""></a>
-                    <div class="Name">Pakistani Sets</div>
-                </div>
-                <div class="pro1">
-                    <a href="Tika and Jhumkies.html"><img src="img/Collections/Tika and jhumkas.jpg" alt=""></a>
-                    <div class="Name">Tikka Sets</div>
-                </div>
-                <div class="pro1">
-                    <a href="western wear.html"><img src="img/Collections/western wear.jpg" alt=""></a>
-                    <div class="Name">Western Wear</div>
-                </div>
+    <section id="Categories" class="section-p1">
+        <h2 id="shop">Categories</h2>
+        <p>Discover Your Perfect Sparkle</p>
+        <div class="pro-container">
+            <div class="pro1">
+                <a href="American.html"><img src="img/Collections/American diamond chokker sets.jpg" alt=""></a>
+                <div class="Name">American Diamond Sets</div>
             </div>
-        </section>
-    
-    </div>
+            <div class="pro1">
+                <a href="bahubali.html"><img src="img/Collections/bahubali jhumka and tika.jpg" alt=""></a>
+                <div class="Name">Bahubali Jhumkas</div>
+            </div>
+            <div class="pro1">
+                <a href="clutches.html"><img src="img/Collections/Clutches and purses.jpg" alt=""></a>
+                <div class="Name">Clutches and Purses</div>
+            </div>
+            <div class="pro1">
+                <a href="kundan bangles.html"><img src="img/Collections/kundan bangles.jpg" alt=""></a>
+                <div class="Name">Kundan Bangles</div>
+            </div>
+            <div class="pro1">
+                <a href="mirror chokker.html"><img src="img/Collections/Mirror Chokker set.jpg" alt=""></a>
+                <div class="Name">Mirror Chokker Sets</div>
+            </div>
+            <div class="pro1">
+                <a href="pakistani sets.html"><img src="img/Collections/Pakistani Sets.jpg" alt=""></a>
+                <div class="Name">Pakistani Sets</div>
+            </div>
+            <div class="pro1">
+                <a href="Tika and Jhumkies.html"><img src="img/Collections/Tika and jhumkas.jpg" alt=""></a>
+                <div class="Name">Tikka Sets</div>
+            </div>
+            <div class="pro1">
+                <a href="western wear.html"><img src="img/Collections/western wear.jpg" alt=""></a>
+                <div class="Name">Western Wear</div>
+            </div>
+
+            <!-- Duplicate set for infinite scrolling -->
+            <div class="pro1">
+                <a href="American.html"><img src="img/Collections/American diamond chokker sets.jpg" alt=""></a>
+                <div class="Name">American Diamond Sets</div>
+            </div>
+            <div class="pro1">
+                <a href="bahubali.html"><img src="img/Collections/bahubali jhumka and tika.jpg" alt=""></a>
+                <div class="Name">Bahubali Jhumkas</div>
+            </div>
+            <div class="pro1">
+                <a href="clutches.html"><img src="img/Collections/Clutches and purses.jpg" alt=""></a>
+                <div class="Name">Clutches and Purses</div>
+            </div>
+            <div class="pro1">
+                <a href="kundan bangles.html"><img src="img/Collections/kundan bangles.jpg" alt=""></a>
+                <div class="Name">Kundan Bangles</div>
+            </div>
+            <div class="pro1">
+                <a href="mirror chokker.html"><img src="img/Collections/Mirror Chokker set.jpg" alt=""></a>
+                <div class="Name">Mirror Chokker Sets</div>
+            </div>
+            <div class="pro1">
+                <a href="pakistani sets.html"><img src="img/Collections/Pakistani Sets.jpg" alt=""></a>
+                <div class="Name">Pakistani Sets</div>
+            </div>
+            <div class="pro1">
+                <a href="Tika and Jhumkies.html"><img src="img/Collections/Tika and jhumkas.jpg" alt=""></a>
+                <div class="Name">Tikka Sets</div>
+            </div>
+            <div class="pro1">
+                <a href="western wear.html"><img src="img/Collections/western wear.jpg" alt=""></a>
+                <div class="Name">Western Wear</div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>

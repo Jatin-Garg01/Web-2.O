@@ -68,7 +68,7 @@
             <table>
                 <tr>
                     <td>Cart Subtotal</td>
-                    <td id="cartSubtotal">Rs. 0</td> <!-- Subtotal will be injected here -->
+                    <td id="cartSubtotal">Rs. 0</td> 
                 </tr>
                 <tr>
                     <td>Shipping</td>
@@ -76,7 +76,7 @@
                 </tr>
                 <tr>
                     <td><strong>Total</strong></td>
-                    <td id="cartTotal"><strong>Rs.0</strong></td> <!-- Total will be injected here -->
+                    <td id="cartTotal"><strong>Rs.0</strong></td> 
                 </tr>
             </table>
             <button id="checkoutBtn" onclick="proceedToCheckout();" class="normal">
@@ -139,7 +139,7 @@
     </div>
 </body>
 <script>
-    // Function to load cart items from localStorage and display them
+    
     function loadCart() {
         let cart = JSON.parse(localStorage.getItem("cart")) || [];
         const cartItems = document.getElementById("cartItems");
@@ -168,10 +168,9 @@
         document.getElementById("cartSubtotal").innerText = `Rs. ${subtotal.toFixed(2)}`;
         document.getElementById("cartTotal").innerHTML = `<strong>Rs.${subtotal.toFixed(2)}</strong>`;
         
-        updateCheckoutButton(); // Update the checkout button based on user login status
+        updateCheckoutButton(); 
     }
 
-    // Function to remove an item from the cart
     function removeItem(index) {
         let cart = JSON.parse(localStorage.getItem("cart")) || [];
         cart.splice(index, 1);
@@ -179,7 +178,7 @@
         loadCart(); 
     }
 
-    // Function to update the quantity of a cart item
+ 
     function updateQuantity(index, newQuantity) {
         let cart = JSON.parse(localStorage.getItem("cart")) || [];
         newQuantity = parseInt(newQuantity, 10);
@@ -192,27 +191,26 @@
         loadCart(); 
     }
 
-    // Function to update the checkout button based on user login status
+  
     function updateCheckoutButton() {
         const checkoutBtn = document.getElementById("checkoutBtn");
-        const user = JSON.parse(localStorage.getItem("user")); // Assuming user is stored as a JSON string
-
+        const user = JSON.parse(localStorage.getItem("user")); 
         if (user) {
-            // User is logged in
+            
             checkoutBtn.innerHTML = "<strong>Proceed to Checkout</strong>";
             checkoutBtn.onclick = function() {
-                window.location.href = 'p1.html'; // Proceed to checkout
+                window.location.href = 'p1.html'; 
             };
         } else {
-            // User is not logged in
+            
             checkoutBtn.innerHTML = "<strong>Login first to Checkout</strong>";
             checkoutBtn.onclick = function() {
-                window.location.href = 'login.html'; // Redirect to login page
+                window.location.href = 'login.html'; 
             };
         }
     }
 
-    // Initial load
+  
     window.onload = loadCart;
 </script>
 

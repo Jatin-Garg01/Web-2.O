@@ -7,4 +7,4 @@ function showPaymentMethod(paymentMethodId) {
 }
 showPaymentMethod('googlePayDetails');
 document.getElementById('payNowButton').addEventListener('click', function() {
-    window.location.href = "confirmation.html"; });
+    window.location.href = "order-placed.html"; });

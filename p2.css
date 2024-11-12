@@ -15,7 +15,7 @@ body {
 }
 
 .background {
-    background-image: url('your-background-image.jpg'); /* Replace with your background image */
+    background-image: url('your-background-image.jpg'); 
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -24,7 +24,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: rgb(190, 171, 145); */
 }
 
 .container {
@@ -35,7 +34,6 @@ body {
     width: 80%;
     max-width: 600px;
     position: relative;
-    /* z-index: 1; */
     margin-top: 70px;
 }
 
@@ -139,7 +137,6 @@ hr {
     border-top: 1px solid #ccc;
 }
 
-/* Responsive Styles */
 @media (max-width: 600px) {
     .container {
         padding: 15px;

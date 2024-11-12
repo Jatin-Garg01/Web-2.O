@@ -10,14 +10,11 @@
 <body>
     <div class="background">
         <div class="container">
-            <!-- Checkout Progress -->
             <div class="progress-bar">
                 <span class="step completed">Bag</span>
                 <span class="step completed">Address</span>
                 <span class="step active">Payment</span>
             </div>
-
-            <!-- Payment Section -->
             <h2>Recommended Payment Options</h2>
             <div class="payment-options">
                 <div class="payment-option">
@@ -40,10 +37,6 @@
                     <input type="radio" id="creditCard" name="payment" onclick="showPaymentMethod('creditCardDetails')">
                     <label for="creditCard">Credit/Debit Card</label>
                 </div>
-
-                
-
-
                 <div class="payment-option">
                     <input type="radio" id="emi" name="payment" onclick="showPaymentMethod('emiDetails')">
                     <label for="emi">EMI</label>
@@ -54,8 +47,6 @@
                     <label for="netBanking">Net Banking</label>
                 </div>
             </div>
-
-            <!-- Dynamic Payment Method Details Section -->
             <div id="paymentDetailsSection">
                 <div id="googlePayDetails" class="payment-details">
                     <h4>Google Pay Instructions</h4>
@@ -97,15 +88,11 @@
                     <p>Complete your transaction using secure net banking options.</p>
                 </div>
             </div>
-
-            <!-- Gift Card Section -->
             <div class="gift-card">
                 <label for="giftCard">Have a Gift Card?</label>
                 <input type="text" id="giftCard" placeholder="Enter gift card code">
                 <button>APPLY</button>
             </div>
-
-            <!-- Price Details -->
             <div class="price-details">
                 <p>Total MRP: Rs 558</p>
                 <p>Discount on MRP: Rs 432</p>
